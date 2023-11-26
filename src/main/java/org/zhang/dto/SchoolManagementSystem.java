@@ -71,7 +71,7 @@ public class SchoolManagementSystem {
     /**
      * Display all departments in a school.
      */
-    public void displayDepartment() {
+    public void printDepartment() {
 
     }
 
@@ -79,7 +79,7 @@ public class SchoolManagementSystem {
      * Display all students in a school.
      * The name of the courses and the name of the department are only displayed if there is any.
      */
-    public void displayStudents() {
+    public void printStudents() {
 
     }
 
@@ -87,7 +87,7 @@ public class SchoolManagementSystem {
      * Display all teachers in a school.
      * The name of the courses and the name of the department are only displayed if there is any.
      */
-    public void displayTeachers() {
+    public void printTeachers() {
 
     }
 
@@ -95,7 +95,7 @@ public class SchoolManagementSystem {
      * Display all courses in a school.
      * The name of the teacher, the students, and the department are only displayed if there is any.
      */
-    public void displayCourses() {
+    public void printCourses() {
 
     }
 
@@ -144,13 +144,13 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * Assign a teacher to a specific course (based on teacherId and courseId).
+     * Assign a teacher to a different course (based on teacherId and courseId).
      * If no corresponding teacher or course is found, a message will be printed.
      *
      * @param teacherId The teacher's ID to assign to the course.
      * @param courseId  The course's ID.
      */
-    public void assignTeacherToCourse(String teacherId, String courseId) {
+    public void modifyCourseTeacher(String teacherId, String courseId) {
 
     }
 
@@ -164,7 +164,7 @@ public class SchoolManagementSystem {
      * @param studentId The ID of the student registered to the course.
      * @param courseId  The course's ID.
      */
-    public void registerCourseForStudent(String studentId, String courseId) {
+    public void registerCourse(String studentId, String courseId) {
 
     }
 }

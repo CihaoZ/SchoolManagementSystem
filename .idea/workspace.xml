@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="Finished writing all classes aside SchoolManagement System, Missing documentation, need check for Clean Code. Department -&gt; Teacher -&gt; Course -&gt; Student">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" afterDir="false" />
+    <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="All classes with correct documentation.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,40 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/xueai/IdeaProjects/Zoo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/xueai/IdeaProjects/SchoolManagementSystem/src/main/java/org/example/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/xueai/IdeaProjects/SchoolManagementSystem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/xueai/IdeaProjects/SchoolManagementSystem/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\xueai\IdeaProjects\SchoolManagementSystem\src" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="SchoolManagementSystem" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SchoolManagementSystem" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,6 +80,10 @@
       <workItem from="1701020794202" duration="180000" />
       <workItem from="1701020986855" duration="372000" />
       <workItem from="1701021379803" duration="4176000" />
+      <workItem from="1701029409154" duration="1447000" />
+      <workItem from="1701031265803" duration="77000" />
+      <workItem from="1701031407458" duration="14000" />
+      <workItem from="1701032679308" duration="150000" />
     </task>
     <task id="LOCAL-00001" summary="Initial File Creation">
       <option name="closed" value="true" />
@@ -136,7 +125,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701029286790</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Documented and written all methods within SchoolManagementSystem.">
+      <option name="closed" value="true" />
+      <created>1701030467827</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701030467827</updated>
+    </task>
+    <task id="LOCAL-00007" summary="All classes with correct documentation.">
+      <option name="closed" value="true" />
+      <created>1701031224369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701031224369</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +163,8 @@
     <MESSAGE value="Added Lombok Dependency" />
     <MESSAGE value="Added all classes for project" />
     <MESSAGE value="Finished writing all classes aside SchoolManagement System, Missing documentation, need check for Clean Code. Department -&gt; Teacher -&gt; Course -&gt; Student" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished writing all classes aside SchoolManagement System, Missing documentation, need check for Clean Code. Department -&gt; Teacher -&gt; Course -&gt; Student" />
+    <MESSAGE value="Documented and written all methods within SchoolManagementSystem." />
+    <MESSAGE value="All classes with correct documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="All classes with correct documentation." />
   </component>
 </project>
