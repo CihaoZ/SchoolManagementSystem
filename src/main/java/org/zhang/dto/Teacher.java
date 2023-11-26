@@ -1,5 +1,10 @@
 package org.zhang.dto;
 
+/**
+ * Teacher of the School
+ *
+ * @author Cihao Zhang
+ */
 public class Teacher {
     private static int nextId = 1;
     private String lastName;
@@ -7,6 +12,13 @@ public class Teacher {
     private String id;
     private Department department;
 
+    /**
+     * Constructor for Teacher with lastName, firstName and department, with incrementing id.
+     *
+     * @param lastName   lastName of the teacher
+     * @param firstName  firstName of the teacher
+     * @param department department of the teacher
+     */
     public Teacher(String lastName, String firstName, Department department) {
         this.lastName = lastName;
         this.firstName = firstName;
@@ -14,6 +26,11 @@ public class Teacher {
         this.id = String.format("T%03d", nextId++);
     }
 
+    /**
+     * Returns a string representation of the teacher.
+     *
+     * @return returns a string representation of the teacher.
+     */
     @Override
     public String toString() {
         return "Teacher{" +

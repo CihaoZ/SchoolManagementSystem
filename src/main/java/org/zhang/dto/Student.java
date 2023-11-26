@@ -2,6 +2,11 @@ package org.zhang.dto;
 
 import java.util.Arrays;
 
+/**
+ * Student for school.
+ *
+ * @author Cihao Zhang
+ */
 public class Student {
     private static final int MAX_COURSE_NUM = 5;
     private static int nextId = 1;
@@ -13,6 +18,13 @@ public class Student {
     private Course[] courses;
     private int courseNum;
 
+    /**
+     * Constructor of Student with last name, first name and department. With incremented ID.
+     *
+     * @param lastName   last name of student
+     * @param firstName  first name of student
+     * @param department department of student
+     */
     public Student(String lastName, String firstName, Department department) {
         this.id = String.format("S%03d", nextId++);
         this.lastName = lastName;
@@ -20,6 +32,11 @@ public class Student {
         this.department = department;
     }
 
+    /**
+     * Returns a string representation of the student.
+     *
+     * @return the string representation of the student.
+     */
     @Override
     public String toString() {
         return "Student{" +
