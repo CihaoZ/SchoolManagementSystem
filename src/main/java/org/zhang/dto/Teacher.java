@@ -1,5 +1,10 @@
 package org.zhang.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 /**
  * Teacher of the School
  *

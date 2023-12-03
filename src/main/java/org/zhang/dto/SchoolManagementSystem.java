@@ -1,5 +1,9 @@
 package org.zhang.dto;
 
+import lombok.Getter;
+import java.util.Arrays;
+
+@Getter
 /**
  * SchoolManagementSystem class for managing departments, students, teachers, and courses.
  *
@@ -32,7 +36,12 @@ public class SchoolManagementSystem {
      * @param name The name of the new department.
      */
     public void addDepartment(String name) {
-
+        int index = findEmptyIndex(departments);
+        if (index != -1) {
+            departments[index] = new Department(name);
+        } else {
+            System.out.println("The maximum number of departments has been reached.");
+        }
     }
 
     /**
@@ -43,7 +52,14 @@ public class SchoolManagementSystem {
      * @param departmentId ID of the department of the student.
      */
     public void addStudent(String lastName, String firstName, String departmentId) {
+        Department department1 = findDepartment(departmentId);
+        int index = findEmptyIndex(students);
 
+        if (index != -1) {
+            students[index] = new Student(lastName, firstName, department1);
+        } else {
+            System.out.println("The maximum number of students has been reached.");
+        }
     }
 
     /**
@@ -54,7 +70,13 @@ public class SchoolManagementSystem {
      * @param departmentId ID of the department of the teacher.
      */
     public void addTeacher(String lastName, String firstName, String departmentId) {
-
+        Department department1 = findDepartment(departmentId);
+        int index = findEmptyIndex(teachers);
+        if (index != -1) {
+            teachers[index] = new Teacher(lastName, firstName, department1);
+        } else {
+            System.out.println("The maximum number of teachers has been reached.");
+        }
     }
 
     /**
@@ -65,14 +87,31 @@ public class SchoolManagementSystem {
      * @param departmentId ID of the department of the course.
      */
     public void addCourse(String courseName, double credit, String departmentId) {
-
+        Department department1 = findDepartment(departmentId);
+        int index = findEmptyIndex(courses);
+        if (department1 != null) {
+            if (index != -1) {
+                courses[index] = new Course(courseName, credit, department1);
+            } else {
+                System.out.println("The maximum number of courses has been reached.");
+            }
+        } else {
+            System.out.println("The department does not exist.");
+        }
     }
 
     /**
      * Display all departments in a school.
      */
     public void printDepartment() {
-
+        for (Department department : departments) {
+            if (department != null) {
+                System.out.println(department);
+            } else {
+                System.out.println("Department does not exist.");
+                break;
+            }
+        }
     }
 
     /**
@@ -80,7 +119,14 @@ public class SchoolManagementSystem {
      * The name of the courses and the name of the department are only displayed if there is any.
      */
     public void printStudents() {
-
+        for (Student student : students) {
+            if (student != null) {
+                System.out.println(student);
+            } else {
+                System.out.println("Student does not exist.");
+                break;
+            }
+        }
     }
 
     /**
@@ -88,7 +134,14 @@ public class SchoolManagementSystem {
      * The name of the courses and the name of the department are only displayed if there is any.
      */
     public void printTeachers() {
-
+        for (Teacher teacher : teachers) {
+            if (teacher != null) {
+                System.out.println(teacher);
+            } else {
+                System.out.println("Course does not exist.");
+                break;
+            }
+        }
     }
 
     /**
@@ -96,7 +149,14 @@ public class SchoolManagementSystem {
      * The name of the teacher, the students, and the department are only displayed if there is any.
      */
     public void printCourses() {
-
+        for (Course course : courses) {
+            if (course != null) {
+                System.out.println(course);
+            } else {
+                System.out.println("Course does not exist.");
+                break;
+            }
+        }
     }
 
     /**
@@ -107,6 +167,11 @@ public class SchoolManagementSystem {
      * @return The department with corresponding ID, null if nothing is corresponding.
      */
     public Department findDepartment(String departmentId) {
+        for (Department department : departments) {
+            if (department != null && department.getId().equals(departmentId)) {
+                return department;
+            }
+        }
         return null;
     }
 
@@ -118,6 +183,11 @@ public class SchoolManagementSystem {
      * @return The student with corresponding ID, null if nothing is corresponding.
      */
     public Student findStudent(String studentId) {
+        for (Student student : students) {
+            if (student != null && student.getId().equals(studentId)) {
+                return student;
+            }
+        }
         return null;
     }
 
@@ -129,6 +199,11 @@ public class SchoolManagementSystem {
      * @return The teacher with corresponding ID, null if nothing is corresponding.
      */
     public Teacher findTeacher(String teacherId) {
+        for (Teacher teacher : teachers) {
+            if (teacher != null && teacher.getId().equals(teacherId)) {
+                return teacher;
+            }
+        }
         return null;
     }
 
@@ -140,6 +215,11 @@ public class SchoolManagementSystem {
      * @return The course with corresponding ID, null if nothing is corresponding.
      */
     public Course findCourse(String courseId) {
+        for (Course course : courses) {
+            if (course != null && course.getId().equals(courseId)) {
+                return course;
+            }
+        }
         return null;
     }
 
@@ -151,7 +231,15 @@ public class SchoolManagementSystem {
      * @param courseId  The course's ID.
      */
     public void modifyCourseTeacher(String teacherId, String courseId) {
+        Teacher teacher = findTeacher(teacherId);
+        Course course = findCourse(courseId);
 
+        if (teacher == null || course == null) {
+            System.out.println("No corresponding teacher or course found.");
+        } else {
+            course.setTeacher(teacher);
+            System.out.println("Teacher has been assigned to the course successfully.");
+        }
     }
 
     /**
@@ -165,6 +253,32 @@ public class SchoolManagementSystem {
      * @param courseId  The course's ID.
      */
     public void registerCourse(String studentId, String courseId) {
+        Student student = findStudent(studentId);
+        Course course = findCourse(courseId);
 
+        if (student == null || course == null) {
+            System.out.println("No corresponding student or course found.");
+        } else if (student.getCourseNum() >= 5) {
+            System.out.println("The student has already registered to the maximum number of courses.");
+        } else if (course.getStudentNum() >= 5) {
+            System.out.println("The course has reached the maximum number of registered students.");
+        } else if (Arrays.asList(student.getCourses()).contains(course)) {
+            System.out.println("The student is already registered to the corresponding course.");
+        } else {
+            student.getCourses()[student.getCourseNum()] = course;
+            student.setCourseNum(student.getCourseNum() + 1);
+            course.getStudents()[course.getStudentNum()] = student;
+            course.setStudentNum(course.getStudentNum() + 1);
+            System.out.println("Student has been registered to the course successfully.");
+        }
+    }
+
+    public int findEmptyIndex(Object[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == null) {
+                return i;
+            }
+        }
+        return -1;
     }
 }

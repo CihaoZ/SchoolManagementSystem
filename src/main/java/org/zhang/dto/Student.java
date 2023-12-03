@@ -1,7 +1,12 @@
 package org.zhang.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Arrays;
 
+@Getter
+@Setter
 /**
  * Student for school.
  *

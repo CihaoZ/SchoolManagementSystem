@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="All classes with correct documentation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,23 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/xueai/IdeaProjects/SchoolManagementSystem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/xueai/IdeaProjects/SchoolManagementSystem/src/main/java/org/example/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/xueai/IdeaProjects/SchoolManagementSystem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/xueai/IdeaProjects/SchoolManagementSystem/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xueai\IdeaProjects\SchoolManagementSystem" />
       <recent name="C:\Users\xueai\IdeaProjects\SchoolManagementSystem\src" />
     </key>
   </component>
@@ -84,6 +87,11 @@
       <workItem from="1701031265803" duration="77000" />
       <workItem from="1701031407458" duration="14000" />
       <workItem from="1701032679308" duration="150000" />
+      <workItem from="1701033069476" duration="5190000" />
+      <workItem from="1701128865619" duration="1634000" />
+      <workItem from="1701218405279" duration="1190000" />
+      <workItem from="1701226073937" duration="82000" />
+      <workItem from="1701568040928" duration="1416000" />
     </task>
     <task id="LOCAL-00001" summary="Initial File Creation">
       <option name="closed" value="true" />
@@ -141,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701031224369</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="All classes with correct documentation.">
+      <option name="closed" value="true" />
+      <created>1701038671073</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701038671073</updated>
+    </task>
+    <task id="LOCAL-00009" summary="All classes with correct documentation.">
+      <option name="closed" value="true" />
+      <created>1701038940352</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701038940352</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,5 +190,9 @@
     <MESSAGE value="Documented and written all methods within SchoolManagementSystem." />
     <MESSAGE value="All classes with correct documentation." />
     <option name="LAST_COMMIT_MESSAGE" value="All classes with correct documentation." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
