@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="All classes with correct documentation.">
+    <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="Finished writing SchoolManagementSystem with all methods complete, still needs testing. Revision -&gt; Register Course for V2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" afterDir="false" />
     </list>
@@ -91,7 +91,7 @@
       <workItem from="1701128865619" duration="1634000" />
       <workItem from="1701218405279" duration="1190000" />
       <workItem from="1701226073937" duration="82000" />
-      <workItem from="1701568040928" duration="1416000" />
+      <workItem from="1701568040928" duration="2444000" />
     </task>
     <task id="LOCAL-00001" summary="Initial File Creation">
       <option name="closed" value="true" />
@@ -165,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701038940352</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished writing SchoolManagementSystem with all methods complete, still needs testing. Revision -&gt; Register Course for V2.">
+      <option name="closed" value="true" />
+      <created>1701570041683</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701570041683</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +197,8 @@
     <MESSAGE value="Finished writing all classes aside SchoolManagement System, Missing documentation, need check for Clean Code. Department -&gt; Teacher -&gt; Course -&gt; Student" />
     <MESSAGE value="Documented and written all methods within SchoolManagementSystem." />
     <MESSAGE value="All classes with correct documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="All classes with correct documentation." />
+    <MESSAGE value="Finished writing SchoolManagementSystem with all methods complete, still needs testing. Revision -&gt; Register Course for V2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished writing SchoolManagementSystem with all methods complete, still needs testing. Revision -&gt; Register Course for V2." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

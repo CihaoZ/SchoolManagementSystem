@@ -265,10 +265,8 @@ public class SchoolManagementSystem {
         } else if (Arrays.asList(student.getCourses()).contains(course)) {
             System.out.println("The student is already registered to the corresponding course.");
         } else {
-            student.getCourses()[student.getCourseNum()] = course;
-            student.setCourseNum(student.getCourseNum() + 1);
-            course.getStudents()[course.getStudentNum()] = student;
-            course.setStudentNum(course.getStudentNum() + 1);
+            student.registerCourse(course);
+            course.addStudent(student);
             System.out.println("Student has been registered to the course successfully.");
         }
     }

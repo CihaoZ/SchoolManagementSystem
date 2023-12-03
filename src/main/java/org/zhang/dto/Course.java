@@ -55,4 +55,10 @@ public class Course {
                 ", studentNum=" + studentNum +
                 '}';
     }
+
+    public void addStudent(Student student) {
+        if (studentNum < MAX_STUDENT_NUM) {
+            students[studentNum++] = student;
+        }
+    }
 }

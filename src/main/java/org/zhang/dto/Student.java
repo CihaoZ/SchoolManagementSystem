@@ -53,4 +53,10 @@ public class Student {
                 ", courseNum=" + courseNum +
                 '}';
     }
+
+    public void registerCourse(Course course) {
+        if (courseNum < MAX_COURSE_NUM) {
+            courses[courseNum++] = course;
+        }
+    }
 }
