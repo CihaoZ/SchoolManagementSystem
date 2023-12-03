@@ -52,11 +52,11 @@ public class SchoolManagementSystem {
      * @param departmentId ID of the department of the student.
      */
     public void addStudent(String lastName, String firstName, String departmentId) {
-        Department department1 = findDepartment(departmentId);
+        Department department = findDepartment(departmentId);
         int index = findEmptyIndex(students);
 
         if (index != -1) {
-            students[index] = new Student(lastName, firstName, department1);
+            students[index] = new Student(lastName, firstName, department);
         } else {
             System.out.println("The maximum number of students has been reached.");
         }
@@ -70,10 +70,10 @@ public class SchoolManagementSystem {
      * @param departmentId ID of the department of the teacher.
      */
     public void addTeacher(String lastName, String firstName, String departmentId) {
-        Department department1 = findDepartment(departmentId);
+        Department department = findDepartment(departmentId);
         int index = findEmptyIndex(teachers);
         if (index != -1) {
-            teachers[index] = new Teacher(lastName, firstName, department1);
+            teachers[index] = new Teacher(lastName, firstName, department);
         } else {
             System.out.println("The maximum number of teachers has been reached.");
         }
@@ -87,11 +87,11 @@ public class SchoolManagementSystem {
      * @param departmentId ID of the department of the course.
      */
     public void addCourse(String courseName, double credit, String departmentId) {
-        Department department1 = findDepartment(departmentId);
+        Department department = findDepartment(departmentId);
         int index = findEmptyIndex(courses);
-        if (department1 != null) {
+        if (department != null) {
             if (index != -1) {
-                courses[index] = new Course(courseName, credit, department1);
+                courses[index] = new Course(courseName, credit, department);
             } else {
                 System.out.println("The maximum number of courses has been reached.");
             }
@@ -138,7 +138,7 @@ public class SchoolManagementSystem {
             if (teacher != null) {
                 System.out.println(teacher);
             } else {
-                System.out.println("Course does not exist.");
+                System.out.println("Teachers does not exist.");
                 break;
             }
         }
