@@ -3,8 +3,6 @@ package org.zhang.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Arrays;
-
 @Getter
 @Setter
 /**
@@ -49,7 +47,7 @@ public class Student {
                 ", lastName='" + lastName + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", department=" + department +
-                ", courses=" + Arrays.toString(courses) +
+                ", courses=" + courseString(courses) +
                 ", courseNum=" + courseNum +
                 '}';
     }
@@ -58,5 +56,15 @@ public class Student {
         if (courseNum < MAX_COURSE_NUM) {
             courses[courseNum++] = course;
         }
+    }
+
+    private String courseString(Course[] courses) {
+        String courseString = "";
+        for (Course course : courses) {
+            if (course != null) {
+                courseString += course.getCourseName() + " ";
+            }
+        }
+        return courseString;
     }
 }

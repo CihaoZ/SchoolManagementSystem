@@ -36,6 +36,9 @@ public class Course {
         this.courseName = courseName;
         this.credit = credit;
         this.department = department;
+        this.students = new Student[MAX_STUDENT_NUM];
+        this.studentNum = 0;
+        this.teacher = null;
     }
 
     /**
@@ -61,4 +64,10 @@ public class Course {
             students[studentNum++] = student;
         }
     }
+
+    public void addTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+
 }

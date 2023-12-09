@@ -1,6 +1,7 @@
 package org.zhang.dto;
 
 import lombok.Getter;
+
 import java.util.Arrays;
 
 @Getter
@@ -16,18 +17,26 @@ public class SchoolManagementSystem {
     private static final int MAX_COURSE_NUM = 30;
 
     private Department[] departments;
+    private int numDepartments;
     private Student[] students;
+    private int numStudents;
     private Teacher[] teachers;
+    private int numTeachers;
     private Course[] courses;
+    private int numCourses;
 
     /**
      * A NoArgsConstructor for SchoolManagementSystem. Using departments, students, teachers, and courses as empty arrays.
      */
     public SchoolManagementSystem() {
         this.departments = new Department[MAX_DEPARTMENT_NUM];
+        numDepartments = 0;
         this.students = new Student[MAX_STUDENT_NUM];
+        numStudents = 0;
         this.teachers = new Teacher[MAX_TEACHER_NUM];
+        numTeachers = 0;
         this.courses = new Course[MAX_COURSE_NUM];
+        numCourses = 0;
     }
 
     /**
@@ -36,9 +45,9 @@ public class SchoolManagementSystem {
      * @param name The name of the new department.
      */
     public void addDepartment(String name) {
-        int index = findEmptyIndex(departments);
-        if (index != -1) {
-            departments[index] = new Department(name);
+        if (numDepartments < MAX_DEPARTMENT_NUM) {
+            departments[numDepartments] = new Department(name);
+            System.out.println("The department " + departments[numDepartments++] + " has been added.");
         } else {
             System.out.println("The maximum number of departments has been reached.");
         }
@@ -53,10 +62,9 @@ public class SchoolManagementSystem {
      */
     public void addStudent(String lastName, String firstName, String departmentId) {
         Department department = findDepartment(departmentId);
-        int index = findEmptyIndex(students);
-
-        if (index != -1) {
-            students[index] = new Student(lastName, firstName, department);
+        if (numStudents < MAX_STUDENT_NUM) {
+            students[numStudents] = new Student(lastName, firstName, department);
+            System.out.println("The student " + students[numStudents++] + " has been added.");
         } else {
             System.out.println("The maximum number of students has been reached.");
         }
@@ -71,9 +79,9 @@ public class SchoolManagementSystem {
      */
     public void addTeacher(String lastName, String firstName, String departmentId) {
         Department department = findDepartment(departmentId);
-        int index = findEmptyIndex(teachers);
-        if (index != -1) {
-            teachers[index] = new Teacher(lastName, firstName, department);
+        if (numTeachers < MAX_TEACHER_NUM) {
+            teachers[numTeachers] = new Teacher(lastName, firstName, department);
+            System.out.println("The teacher " + teachers[numTeachers++] + " has been added.");
         } else {
             System.out.println("The maximum number of teachers has been reached.");
         }
@@ -88,10 +96,10 @@ public class SchoolManagementSystem {
      */
     public void addCourse(String courseName, double credit, String departmentId) {
         Department department = findDepartment(departmentId);
-        int index = findEmptyIndex(courses);
         if (department != null) {
-            if (index != -1) {
-                courses[index] = new Course(courseName, credit, department);
+            if (numCourses < MAX_COURSE_NUM) {
+                courses[numCourses] = new Course(courseName, credit, department);
+                System.out.println("The course " + courses[numCourses++] + " has been added.");
             } else {
                 System.out.println("The maximum number of courses has been reached.");
             }
@@ -108,7 +116,7 @@ public class SchoolManagementSystem {
             if (department != null) {
                 System.out.println(department);
             } else {
-                System.out.println("Department does not exist.");
+                System.out.println("There are " + (numDepartments) + " departments.");
                 break;
             }
         }
@@ -123,7 +131,7 @@ public class SchoolManagementSystem {
             if (student != null) {
                 System.out.println(student);
             } else {
-                System.out.println("Student does not exist.");
+                System.out.println("There are " + (numStudents) + " students.");
                 break;
             }
         }
@@ -138,7 +146,7 @@ public class SchoolManagementSystem {
             if (teacher != null) {
                 System.out.println(teacher);
             } else {
-                System.out.println("Teachers does not exist.");
+                System.out.println("There are " + (numTeachers) + " teachers.");
                 break;
             }
         }
@@ -153,7 +161,7 @@ public class SchoolManagementSystem {
             if (course != null) {
                 System.out.println(course);
             } else {
-                System.out.println("Course does not exist.");
+                System.out.println("There are " + (numCourses) + " courses.");
                 break;
             }
         }
@@ -269,14 +277,5 @@ public class SchoolManagementSystem {
             course.addStudent(student);
             System.out.println("Student has been registered to the course successfully.");
         }
-    }
-
-    public int findEmptyIndex(Object[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == null) {
-                return i;
-            }
-        }
-        return -1;
     }
 }

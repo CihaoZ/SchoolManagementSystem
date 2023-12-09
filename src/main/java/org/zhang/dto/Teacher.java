@@ -25,10 +25,10 @@ public class Teacher {
      * @param department department of the teacher
      */
     public Teacher(String lastName, String firstName, Department department) {
+        this.id = String.format("T%03d", nextId++);
         this.lastName = lastName;
         this.firstName = firstName;
         this.department = department;
-        this.id = String.format("T%03d", nextId++);
     }
 
     /**

@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="Finished writing methods for registerCourse and Add Student, initialized schoolManagementSystem in Main.">
+    <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="Finished calling methods within Main. However needs debugging.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Teacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +95,12 @@
       <workItem from="1701128865619" duration="1634000" />
       <workItem from="1701218405279" duration="1190000" />
       <workItem from="1701226073937" duration="82000" />
-      <workItem from="1701568040928" duration="5570000" />
+      <workItem from="1701568040928" duration="5724000" />
+      <workItem from="1701574290849" duration="441000" />
+      <workItem from="1701653292936" duration="1063000" />
+      <workItem from="1701662022765" duration="1122000" />
+      <workItem from="1701997584084" duration="2776000" />
+      <workItem from="1702060808597" duration="3769000" />
     </task>
     <task id="LOCAL-00001" summary="Initial File Creation">
       <option name="closed" value="true" />
@@ -182,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701570822630</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finished calling methods within Main. However needs debugging.">
+      <option name="closed" value="true" />
+      <created>1701573923036</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701573923036</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +224,8 @@
     <MESSAGE value="All classes with correct documentation." />
     <MESSAGE value="Finished writing SchoolManagementSystem with all methods complete, still needs testing. Revision -&gt; Register Course for V2." />
     <MESSAGE value="Finished writing methods for registerCourse and Add Student, initialized schoolManagementSystem in Main." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished writing methods for registerCourse and Add Student, initialized schoolManagementSystem in Main." />
+    <MESSAGE value="Finished calling methods within Main. However needs debugging." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished calling methods within Main. However needs debugging." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
