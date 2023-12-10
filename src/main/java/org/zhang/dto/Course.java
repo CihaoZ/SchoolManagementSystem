@@ -52,22 +52,70 @@ public class Course {
                 "id='" + id + '\'' +
                 ", courseName='" + courseName + '\'' +
                 ", credit=" + credit +
-                ", department=" + department +
-                ", teacher=" + teacher +
-                ", students=" + Arrays.toString(students) +
+                ", department=" + departmentString(department) +
+                ", teacher=" + stringTeacher(teacher) +
+                ", students=" + stringStudent(students) +
                 ", studentNum=" + studentNum +
                 '}';
     }
 
+    /**
+     * Add a student to the course while checking if the course is full. If the course is full, print out a message.
+     * @param student
+     */
     public void addStudent(Student student) {
         if (studentNum < MAX_STUDENT_NUM) {
             students[studentNum++] = student;
+        } else {
+            System.out.println("The course is full.");
         }
     }
 
-    public void addTeacher(Teacher teacher) {
+    /**
+     * Set the teacher of the course
+     * @param teacher the teacher of the course
+     */
+    public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
 
+    /**
+     * Turn the teacher of the course into a string
+     * @param teacher the teacher
+     * @return the string
+     */
+    public String stringTeacher(Teacher teacher) {
+        String strOut = "";
+        if (teacher != null) {
+            strOut += teacher.getFirstName() + " " + teacher.getLastName() + "\n";
+        }
+        return strOut;
+    }
 
+    /**
+     * Turn the students of the course into a string
+     * @param students Array of students
+     * @return the string
+     */
+    public String stringStudent(Student[] students) {
+        String strOut = "";
+        for (Student student : students) {
+            if (student != null) {
+                strOut += student.getFirstName() + " " + student.getLastName() + "\n";
+            }
+        }
+        return strOut;
+    }
+
+    /**
+     * Turn the department of the course into a string or an empty string if the department is null
+     * @param department the department
+     * @return the string
+     */
+    private String departmentString(Department department) {
+        if (department != null) {
+            return department.getDepartmentName();
+        }
+        return "";
+    }
 }

@@ -270,12 +270,26 @@ public class SchoolManagementSystem {
             System.out.println("The student has already registered to the maximum number of courses.");
         } else if (course.getStudentNum() >= 5) {
             System.out.println("The course has reached the maximum number of registered students.");
-        } else if (Arrays.asList(student.getCourses()).contains(course)) {
-            System.out.println("The student is already registered to the corresponding course.");
+        } else if (isRegisteredForCourse(course)) {
+            System.out.println("The student has already registered to the course.");
         } else {
             student.registerCourse(course);
             course.addStudent(student);
             System.out.println("Student has been registered to the course successfully.");
         }
+    }
+
+    /**
+     * Check if the student is registered for the course
+     * @param course the course
+     * @return true if the student is registered for the course
+     */
+    public boolean isRegisteredForCourse(Course course) {
+        for (Student student : course.getStudents()) {
+            if (student != null) {
+                return true;
+            }
+        }
+        return false;
     }
 }

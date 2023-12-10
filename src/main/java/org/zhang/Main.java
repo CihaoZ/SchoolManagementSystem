@@ -19,6 +19,7 @@ public class Main {
         schoolManagementSystem.addDepartment("English");
 
         schoolManagementSystem.addStudent("Zhang", "Cihao", "D001");
+        schoolManagementSystem.addStudent("Li", "Xue", null);
         schoolManagementSystem.addTeacher("Wang", "Yi", "D001");
         schoolManagementSystem.addCourse("Java", 3.0, "D001");
 
@@ -34,6 +35,7 @@ public class Main {
 
         schoolManagementSystem.addCourse("Calculus4", 5.0, "D002");
         schoolManagementSystem.modifyCourseTeacher("T001", "C002");
-//        schoolManagementSystem.registerCourse("S001", "C001");
+        schoolManagementSystem.registerCourse("S001", "C001");
+        schoolManagementSystem.registerCourse("S001", "C001");
     }
 }

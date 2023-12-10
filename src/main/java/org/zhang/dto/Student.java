@@ -33,6 +33,8 @@ public class Student {
         this.lastName = lastName;
         this.firstName = firstName;
         this.department = department;
+        this.courses = new Course[MAX_COURSE_NUM];
+        this.courseNum = 0;
     }
 
     /**
@@ -46,18 +48,35 @@ public class Student {
                 "id='" + id + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", firstName='" + firstName + '\'' +
-                ", department=" + department +
+                ", department=" + departmentString(department) +
                 ", courses=" + courseString(courses) +
                 ", courseNum=" + courseNum +
                 '}';
     }
 
+    /**
+     * Register a course. Checks for whether the course has been registered. and whether
+     * the student has reached the maximum number of courses.
+     * @param course course
+     */
     public void registerCourse(Course course) {
         if (courseNum < MAX_COURSE_NUM) {
+            for (int i = 0; i < courseNum; i++) {
+                if (course == courses[i]) {
+                    System.out.println("Already registered.");
+                }
+            }
             courses[courseNum++] = course;
+        } else {
+            System.out.println("Student has already reached maximum number of courses.");
         }
     }
 
+    /**
+     * Returns a string representation of the courses. If there is no course, return empty string.
+     * @param courses array of courses
+     * @return string representation of the courses
+     */
     private String courseString(Course[] courses) {
         String courseString = "";
         for (Course course : courses) {
@@ -66,5 +85,17 @@ public class Student {
             }
         }
         return courseString;
+    }
+
+    /**
+     * Returns a string representation of the department. If there is no department, return empty string.
+     * @param department object of department
+     * @return string representation of the department
+     */
+    private String departmentString(Department department) {
+        if (department != null) {
+            return department.getDepartmentName();
+        }
+        return "";
     }
 }
