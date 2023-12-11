@@ -55,7 +55,7 @@ public class Main {
         schoolManagementSystem.printCourses();
 
         // Modify the Teacher's course
-        schoolManagementSystem.modifyCourseTeacher("T001", "D001"); // should succeed
+        schoolManagementSystem.modifyCourseTeacher("T001", "C001"); // should succeed
 
         schoolManagementSystem.modifyCourseTeacher("T001", "C031"); // should fail because course not found
 
@@ -65,7 +65,7 @@ public class Main {
         schoolManagementSystem.registerCourse("S001", "C001"); // should succeed
         schoolManagementSystem.registerCourse("S201", "C001"); // should fail because student not found
         schoolManagementSystem.registerCourse("S001", "C031"); // should fail because course not found
-        schoolManagementSystem.registerCourse("S00", "C001"); // should fail because student already registered (bonus)
+        schoolManagementSystem.registerCourse("S001", "C001"); // should fail because student already registered (bonus)
 
         // Fills the registerCourseStudent in students
         schoolManagementSystem.registerCourse("S002", "C001");
