@@ -7,4 +7,4 @@ Details : A school management system that manages the school system by adding, f
 
 Class Diagram
 
-![img.png](img.png)
+![image](https://github.com/CihaoZ/SchoolManagementSystem/assets/150823488/64b707b2-d06b-4533-a1c1-720717cbc800)
