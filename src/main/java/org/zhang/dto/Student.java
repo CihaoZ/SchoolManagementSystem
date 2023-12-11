@@ -59,7 +59,7 @@ public class Student {
      * the student has reached the maximum number of courses.
      * @param course course
      */
-    public void registerCourse(Course course) {
+    public void registerCourseStudent(Course course) {
         if (courseNum < MAX_COURSE_NUM) {
             for (int i = 0; i < courseNum; i++) {
                 if (course == courses[i]) {

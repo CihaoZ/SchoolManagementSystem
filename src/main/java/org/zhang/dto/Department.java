@@ -3,7 +3,6 @@ package org.zhang.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-
 /**
  * Department of school
  *

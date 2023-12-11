@@ -61,7 +61,7 @@ public class Course {
 
     /**
      * Add a student to the course while checking if the course is full. If the course is full, print out a message.
-     * @param student
+     * @param student the student to be added
      */
     public void addStudent(Student student) {
         if (studentNum < MAX_STUDENT_NUM) {

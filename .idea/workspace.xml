@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="Finished most of the debugging, need to fix toString() and the bonus.">
+    <list default="true" id="ad4d6ae4-e84d-46e1-94fd-8e1fc38aad9a" name="Changes" comment="Complete Integration, Will now add an Interface for Extra.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/SchoolManagementSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zhang/dto/Student.java" afterDir="false" />
     </list>
@@ -51,22 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/xueai/IdeaProjects/SchoolManagementSystem&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/xueai/IdeaProjects/SchoolManagementSystem/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/xueai/IdeaProjects/SimpleCalculator2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/xueai/IdeaProjects/SchoolManagementSystem/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\xueai\IdeaProjects\SchoolManagementSystem" />
@@ -101,7 +102,7 @@
       <workItem from="1701997584084" duration="2776000" />
       <workItem from="1702060808597" duration="11249000" />
       <workItem from="1702163661738" duration="2253000" />
-      <workItem from="1702230524937" duration="4315000" />
+      <workItem from="1702230524937" duration="25252000" />
     </task>
     <task id="LOCAL-00001" summary="Initial File Creation">
       <option name="closed" value="true" />
@@ -207,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702096458035</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Complete Integration, Will now add an Interface for Extra.">
+      <option name="closed" value="true" />
+      <created>1702236736269</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702236736269</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +244,8 @@
     <MESSAGE value="Finished writing methods for registerCourse and Add Student, initialized schoolManagementSystem in Main." />
     <MESSAGE value="Finished calling methods within Main. However needs debugging." />
     <MESSAGE value="Finished most of the debugging, need to fix toString() and the bonus." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished most of the debugging, need to fix toString() and the bonus." />
+    <MESSAGE value="Complete Integration, Will now add an Interface for Extra." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Integration, Will now add an Interface for Extra." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
