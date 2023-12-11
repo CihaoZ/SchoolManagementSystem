@@ -3,13 +3,13 @@ package org.zhang.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 /**
  * Student for school.
  *
  * @author Cihao Zhang
  */
+@Getter
+@Setter
 public class Student {
     private static final int MAX_COURSE_NUM = 5;
     private static int nextId = 1;
