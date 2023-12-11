@@ -3,13 +3,13 @@ package org.zhang.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 /**
  * Teacher of the School
  *
  * @author Cihao Zhang
  */
+@Getter
+@Setter
 public class Teacher {
     private static int nextId = 1;
     private String lastName;
