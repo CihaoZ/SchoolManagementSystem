@@ -5,13 +5,13 @@ import lombok.Setter;
 
 import java.util.Arrays;
 
-@Getter
-@Setter
 /**
  * Course of school
  *
  * @author Cihao Zhang
  */
+@Getter
+@Setter
 public class Course {
     private static final int MAX_STUDENT_NUM = 5;
     private static int nextId = 1;
